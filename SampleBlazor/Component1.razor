@@ -1,17 +1,17 @@
 ﻿<div class="my-component">
-    hello
+	hello
 </div>
-@code{
-    protected override async Task OnParametersSetAsync()
-    {
-        await base.OnParametersSetAsync();
-        var Value = new { Value = 1 };
-        switch (Value)
-        {
-            case { Value: 1 }:
-                break;
-            case { Value: 2 }:
-                break;
-}
-    }
+@code {
+	protected override async Task OnParametersSetAsync()
+	{
+		await base.OnParametersSetAsync();
+		var Value = new { Value = 1 };
+		switch (Value)
+		{
+			case { Value: 1 }:
+				break;
+			case { Value: 2 }:
+				break;
+		}
+	}
 }
